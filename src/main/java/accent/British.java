@@ -4,44 +4,42 @@ import util.NumberToWordConverter;
 
 public class British implements Language {
 
-    @Override public String translate(int hour, int minute) {
-        if (minute < 30 && minute >= 0) {
-            if (minute == 15)
-                return "quarter past " + NumberToWordConverter.numberToWord(hour);
-            else if (minute == 0) {
-                if (hour == 0)
-                    return "midnight";
-                else if (hour == 12)
-                    return "noon";
-                else
-                    return NumberToWordConverter.numberToWord(hour) + " o'clock";
-            } else
-                return NumberToWordConverter.numberToWord(minute) + " past "
-                    + NumberToWordConverter.numberToWord(hour);
-
-
-        } else if (minute == 30) {
-            if (hour == 0) {
-                return "half past midnight";
-            } else if (hour == 12) {
-                return "half past noon";
-            } else {
-                return "half past " + NumberToWordConverter.numberToWord(hour);
-            }
-
-        } else if (minute > 30 && minute < 60) {
-            if (minute == 45) {
-                hour = hour == 12 ? 1 : hour + 1;
-                return "quarter to " + NumberToWordConverter.numberToWord(hour);
-            } else if (minute % 5 == 0) {
-                hour = hour == 12 ? 1 : hour + 1;
-                return NumberToWordConverter.numberToWord(60-minute) + " to "
-                    + NumberToWordConverter.numberToWord(hour);
-            } else
-                return NumberToWordConverter.numberToWord(hour) + " "
-                    + NumberToWordConverter.numberToWord(minute);
-        } else {
-            throw new IllegalArgumentException("Minute must be between 0-59");
+    @Override
+    public String translate(int hour, int minute) {
+        if (minute < 0 || minute >= 60) {
+            throw new IllegalArgumentException("Hour must be 0-23 and minute 0-59");
         }
+
+        String hourWord = hour == 0 ? "midnight" : hour == 12 ? "noon" : NumberToWordConverter.numberToWord(hour);
+        String nextHourWord = (hour == 0) ? "one" :
+            (hour == 11) ? "noon" :
+                (hour == 12) ? "one" :
+                        NumberToWordConverter.numberToWord(hour + 1);
+
+        if (minute == 0) {
+            if (hour == 0) return "midnight";
+            if (hour == 12) return "noon";
+            return hourWord + " o'clock";
+        }
+
+        if (minute == 15) {
+            if (hour == 0) return "quarter past midnight";
+            if (hour == 12) return "quarter past noon";
+            return "quarter past " + hourWord;
+        }
+
+        if (minute == 30) {
+            if (hour == 0) return "half past midnight";
+            if (hour == 12) return "half past noon";
+            return "half past " + hourWord;
+        }
+
+        if (minute == 45) {
+            return "quarter to " + nextHourWord;
+        }
+
+        return hourWord + " " + NumberToWordConverter.numberToWord(minute);
     }
+
+
 }

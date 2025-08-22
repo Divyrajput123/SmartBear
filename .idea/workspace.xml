@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c73a0e94-2c83-433c-89d8-75132304f0f3" name="Changes" comment="" />
+    <list default="true" id="c73a0e94-2c83-433c-89d8-75132304f0f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/accent/British.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/accent/British.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/util/NumberToWordConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/util/NumberToWordConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/translation/TranslatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/translation/TranslatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/translation.TranslatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/translation.TranslatorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/translation.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/translation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-translation.TranslatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-translation.TranslatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TimeConverter.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/TimeConverterTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/accent/British.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/accent/British.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/NumberToWordConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/NumberToWordConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/translation/TranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/translation/TranslatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +72,8 @@
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.TimeConverterTest.executor": "Run",
     "Gradle.TimeConverterTest.testOneOClock.executor": "Run",
+    "Gradle.TranslatorTest.executor": "Run",
+    "Gradle.TranslatorTest.testDigitalTimeZeroFifteen.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -75,7 +94,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TimeConverterTest">
+  <component name="RunManager" selected="Gradle.TranslatorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.Main" />
       <module name="SmartBear.main" />
@@ -131,6 +150,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TranslatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;translation.TranslatorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TranslatorTest.testDigitalTimeZeroFifteen" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;translation.TranslatorTest.testDigitalTimeZeroFifteen&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Translator" />
       <method v="2">
@@ -146,6 +213,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TranslatorTest" />
+        <item itemvalue="Gradle.TranslatorTest.testDigitalTimeZeroFifteen" />
         <item itemvalue="Gradle.TimeConverterTest" />
         <item itemvalue="Gradle.TimeConverterTest.testOneOClock" />
         <item itemvalue="Application.Main" />
@@ -161,7 +230,7 @@
       <option name="presentableId" value="Default" />
       <updated>1755800898947</updated>
       <workItem from="1755800903398" duration="754000" />
-      <workItem from="1755801898766" duration="17325000" />
+      <workItem from="1755801898766" duration="19612000" />
     </task>
     <servers />
   </component>

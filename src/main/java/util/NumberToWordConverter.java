@@ -10,7 +10,7 @@ public class NumberToWordConverter {
     };
 
     public static String numberToWord(int number) {
-        if (number < 1 || number > 60) {
+        if (number < 0 || number > 60) {
             throw new IllegalArgumentException("Number must be between 1 and 60");
         }
 

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="translation.TranslatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-08-22T06:53:31" hostname="Divys-MacBook-Air.local" time="0.017">
+<testsuite name="translation.TranslatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-08-22T09:26:46" hostname="Divys-MacBook-Air.local" time="0.017">
   <properties/>
-  <testcase name="testHalfPastSeven()" classname="translation.TranslatorTest" time="0.008"/>
+  <testcase name="testHalfPastSeven()" classname="translation.TranslatorTest" time="0.007"/>
   <testcase name="testNoon()" classname="translation.TranslatorTest" time="0.001"/>
+  <testcase name="testDigitalTimeZeroFifteen()" classname="translation.TranslatorTest" time="0.0"/>
   <testcase name="testMidnight()" classname="translation.TranslatorTest" time="0.0"/>
   <testcase name="testQuarterPastFour()" classname="translation.TranslatorTest" time="0.0"/>
   <testcase name="testQuarterToTen()" classname="translation.TranslatorTest" time="0.0"/>
-  <testcase name="testDigitalTimeSixThirtyTwo()" classname="translation.TranslatorTest" time="0.002"/>
+  <testcase name="testDigitalTimeSixThirtyTwo()" classname="translation.TranslatorTest" time="0.003"/>
   <testcase name="testOneOClock()" classname="translation.TranslatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

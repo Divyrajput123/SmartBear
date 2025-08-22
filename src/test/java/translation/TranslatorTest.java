@@ -42,4 +42,9 @@ public class TranslatorTest {
     void testDigitalTimeSixThirtyTwo() {
         assertEquals("six thirty-two", converter.convertTime("6:32"));
     }
+
+    @Test
+    void testDigitalTimeZeroFifteen() {
+        assertEquals("quarter past midnight", converter.convertTime("00:15"));
+    }
 }
