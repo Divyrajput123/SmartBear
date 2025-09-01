@@ -1,4 +1,4 @@
-package util;
+package dictionary;
 
 public class NumberToWordConverter {
     public static final String ones[] = {

@@ -8,7 +8,7 @@ Converts Time given by user in other spoken form
 - Constants for storing time in words
 - JUnit for testing
 - Gradle for building the project
-- Interfaces and template/strategy pattern for extensibility
+- Interfaces and template/strategy pattern for extensibility,open closed principle
 ## How to run
 1. Clone the repository:
    ```bash
@@ -26,13 +26,23 @@ translator/
 ├── build.gradle
 ├── src/
 │   ├── main/java/
-│   │   ├── accent/
-│   │   │   ├── British.java
+│   │   ├── core/
+│   │   │    ├── LanguageDictionary
+│       │    ├── TimeExpression
+│       │    ├── Translator
+│      ├── dictionary/
+│              ├── BritishDictionary
+│              ├── NumberToWordConvertor
+│       ├── expressions/
+│              ├── DefaultExpression
+│              ├── HalfPastExpression
+               ├── OClockExpression
+               ├── QuarterPastExpression
+├              ├── QuarterToExpression
 │   │   ├── language factory/
 │   │   │   ├── LanguageFactory.java
 │   │   └── util/
-│   │         ├── Translator.java
-│   │         ├── NumberToWordConverter.java
+│   │         ├── Validator.java
 │   │         ├── TimeParser.java
 
 │   │       

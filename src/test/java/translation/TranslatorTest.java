@@ -1,12 +1,13 @@
 package translation;
 
+import languagefactory.LanguageFactory;
 import org.junit.jupiter.api.Test;
-import util.Translator;
+import core.Translator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TranslatorTest {
-    private final Translator converter = new Translator("en");
+    private final Translator converter = new Translator(LanguageFactory.createLanguage("en"));
 
     @Test
     void testOneOClock() {

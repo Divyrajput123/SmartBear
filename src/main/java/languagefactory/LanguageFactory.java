@@ -1,13 +1,13 @@
 package languagefactory;
 
-import accent.British;
-import accent.Language;
+import dictionary.BritishDictionary;
+import core.LanguageDictionary;
 
 public class LanguageFactory {
-    public static Language createLanguage(String languageCode) {
+    public static LanguageDictionary createLanguage(String languageCode) {
         switch (languageCode.toLowerCase()) {
             case "en":
-                return new British();
+                return new BritishDictionary();
             default:
                 throw new IllegalArgumentException("Unsupported language code: " + languageCode);
         }
